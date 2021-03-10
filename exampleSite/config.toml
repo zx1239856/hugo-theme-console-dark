@@ -1,6 +1,6 @@
 baseurl = "https://example.com/"
 title = "console-demo"
-theme = "hugo-theme-console"
+theme = "hugo-theme-console-dark"
 languageCode = "en-us"
 
 [params]

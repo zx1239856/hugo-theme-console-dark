@@ -1,10 +1,10 @@
-# Hugo Theme: Console
+# Hugo Theme: Console (Dark)
 
-A minimal, responsive and light theme for Hugo inspired by Linux console. 
+A minimal, responsive and light theme for Hugo inspired by Linux console. Modified from [hugo-theme-console](https://github.com/mrmierzejewski/hugo-theme-console.git) to add support for dark mode and sticky footer.
 
-![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
+![Console](https://github.com/zx1239856/hugo-theme-console-dark/blob/master/images/preview.png?raw=true)
 
-## Live demo
+## Original Live demo
 
 * https://mrmierzejewski.com
 * https://themes.gohugo.io/theme/hugo-theme-console/
@@ -14,7 +14,7 @@ A minimal, responsive and light theme for Hugo inspired by Linux console.
 ```sh
 $ mkdir themes
 $ cd themes
-$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
+$ git submodule add https://github.com/zx1239856/hugo-theme-console-dark hugo-theme-console-dark
 ```
     
 See the [Hugo documentation](https://gohugo.io/themes/installing/) for more information.
@@ -24,7 +24,7 @@ See the [Hugo documentation](https://gohugo.io/themes/installing/) for more info
 Set theme parameter in your config file:
 
 ```
-theme = "hugo-theme-console"
+theme = "hugo-theme-console-dark"
 ```
 
 ## Example Site
@@ -42,6 +42,6 @@ your website top-level ```layouts``` folder (```layouts/index.html```).
 
 ## License
 
-Copyright © 2021 [Marcin Mierzejewski](https://mrmierzejewski.com/)
+Copyright © 2021 [zx1239856](https://github.com/zx1239856)
 
 The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md) for additional licensing information.

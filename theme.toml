@@ -1,18 +1,18 @@
-name = "hugo-theme-console"
+name = "hugo-theme-console-dark"
 license = "MIT"
-licenselink = "https://github.com/mrmierzejewski/hugo-theme-console/blob/master/LICENSE"
-description = "A minimal, responsive and light theme for Hugo inspired by Linux console."
-homepage = "https://github.com/mrmierzejewski/hugo-theme-console"
-tags = ["blog", "gallery", "portfolio", "console", "terminal", "clean", "personal", "minimal", "monotone", "simple", "technical", "responsive", "mobile", "minimalist", "retro", "animation"]
-features = ["disqus", "responsive", "google analytics"]
+licenselink = "https://github.com/zx1239856/hugo-theme-console-dark/blob/master/LICENSE"
+description = "A minimal, responsive and light theme for Hugo inspired by Linux console. Added dark mode support"
+homepage = "https://github.com/zx1239856/hugo-theme-console-dark"
+tags = ["blog", "gallery", "portfolio", "console", "terminal", "clean", "personal", "minimal", "monotone", "simple", "technical", "responsive", "mobile", "minimalist", "retro", "animation", "dark"]
+features = ["disqus", "responsive", "google analytics", "dark mode"]
 min_version = "0.81.0"
 
 [author]
-    name = "Marcin Mierzejewski"
-    homepage = "https://mrmierzejewski.com"
-    github = "https://github.com/mrmierzejewski"
+    name = "Xiang Zhang"
+    homepage = "https://xzhang.dev"
+    github = "https://github.com/zx1239856"
 
 [original]
-    author = "Jonas D."
-    homepage = "https://terminalcss.xyz/"
-    repo = "https://github.com/Gioni06/terminal.css"
+    author = "Marcin Mierzejewski"
+    homepage = "https://mrmierzejewski.com"
+    repo = "https://github.com/mrmierzejewski"
