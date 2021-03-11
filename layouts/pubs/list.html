@@ -1,0 +1,28 @@
+{{ define "main" }}
+<h1>{{ .Page.Title }}</h1>
+{{ .Content }}
+
+<div class="pubs-list">
+    {{ range $index, $element := sort .Data.Pages "Date" "desc" }}
+    <div class="pub">
+        <p>
+        <h2>{{ add $index 1 }}. {{ $element.Params.author }},
+        {{ if not $element.Params.nolink }}
+            "<a href="{{ $element.Permalink }}" title="{{ $element.Title }}">{{ $element.Title }}</a>",
+        {{ else }}
+            "{{ $element.Title }}",
+        {{ end }}
+        {{ $element.Params.conf }}.
+        {{ if $element.Params.pdf }}
+        [<a href="{{ $element.Params.pdf }}">pdf</a>]
+        {{ end }}
+        {{ if $element.Params.code }}
+        [<a href="{{ $element.Params.code }}">code</a>]
+        {{ end }}
+        </h2>
+        </p>
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

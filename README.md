@@ -2,6 +2,10 @@
 
 A minimal, responsive and light theme for Hugo inspired by Linux console. Modified from [hugo-theme-console](https://github.com/mrmierzejewski/hugo-theme-console.git) to add support for dark mode and sticky footer.
 
+## Update
++ (2021-03-11) Add support for academic publications, please refer to the example site for details
+
+
 ![Console](https://github.com/zx1239856/hugo-theme-console-dark/blob/master/images/preview.png?raw=true)
 
 ## Original Live demo
