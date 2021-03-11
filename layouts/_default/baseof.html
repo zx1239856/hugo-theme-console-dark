@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
-    <script src="{{ "hugo-theme-console/js/theme.js" | absURL }}"></script>
-    <link rel="stylesheet" href="{{ "hugo-theme-console/css/terminal-0.7.1.min.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "hugo-theme-console/css/animate-3.7.2.min.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "hugo-theme-console/css/console.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "hugo-theme-console/css/dark.css" | absURL }}">
+    <script src='{{ "hugo-theme-console/js/theme.js" | absURL }}'></script>
+    <link rel="stylesheet" href='{{ "hugo-theme-console/css/terminal-0.7.1.min.css" | absURL }}'>
+    <link rel="stylesheet" href='{{ "hugo-theme-console/css/animate-3.7.2.min.css" | absURL }}'>
+    <link rel="stylesheet" href='{{ "hugo-theme-console/css/console.css" | absURL }}'>
+    <link rel="stylesheet" href='{{ "hugo-theme-console/css/dark.css" | absURL }}'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
     {{ `
       <!--[if lt IE 9]>
@@ -39,7 +39,8 @@
               {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
               {{ $.Scratch.Add "path" .Site.BaseURL }}
               <a href="{{ .Site.BaseURL }}" class="no-style {{ with .Site.Params.TitleCutting }}site-name{{ end }}">{{ .Site.Title }}</a>:~# 
-              {{ range $index, $element := split $url "/" }}{{ $.Scratch.Add "path" $element }}{{ if ne $element "" }}<a href='{{ $.Scratch.Get "path" | absURL }}'>{{ . }}</a>/{{ $.Scratch.Add "path" "/" }}{{ end }}{{ end }}</div></header>
+              {{ range $index, $element := split $url "/" }}{{ $.Scratch.Add "path" $element }}{{ if ne $element "" }}<a href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>/{{ $.Scratch.Add "path" "/" }}{{ end }}{{ end }}</div>
+          </header>
           <nav class="terminal-menu">
             <ul vocab="https://schema.org/" typeof="BreadcrumbList">
                 {{ range .Site.Params.navlinks }}
